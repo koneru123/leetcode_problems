@@ -23,7 +23,8 @@ var twoSum = function(nums, target) {
     // initialize an indexArr variable to an empty array
     let indexArr = [];
     
-    // Time complexity would be O(2^n) - Exponential time
+    // Time complexity would be O(n^2) - Exponential time
+    // Space Complexity ???
     // loop through the nums array twice to compare the consecutive numbers in the array
     for(let i = 0; i < nums.length; i++) {
         for(let j = i+1; j < nums.length; j++ ) {
