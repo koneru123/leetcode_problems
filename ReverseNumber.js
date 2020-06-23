@@ -6,7 +6,10 @@
  I: Number
  0: Should be a reversed number
  C: No constraints
- E: Number could be negative, or it could have 0 at the end
+ E: 
+   - Number could be negative, 
+   - or it could have 0 at the end,
+   - It should be with in the 32-bit range
 */
 var reverse = function(x) {
     // initialize a new var reverseNum
