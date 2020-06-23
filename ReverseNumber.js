@@ -18,19 +18,24 @@ var reverse = function(x) {
         if(x < 0) {
             isNegative = true;
             // use Math.abs() to return an absolute number
+            // time complexity - O(1)- constant time operation
             x = Math.abs(x);
         }
     // convert the number to string
+    // time complexity - O(1) - constant time operation
     reverseNum = x.toString();    
     // split the string 
     // reverse the string
     // join the string
+    // time complexity - O(n) - Linear time operation
     reverseNum = reverseNum.split('').reverse().join('');
     // convert the string to number
+    // time complexity - O(1) - constant time operation
     x = parseInt(reverseNum, 10);
-    // initializing a value to get the range
+    // initializing a value to get the valid range
     const value = (2**31) - 1;   
     // return the final value
+    // time complexity - O(1) - constant time operation
     if(x < value) {
         // check if the value initially was negative
         if(isNegative) {
@@ -44,6 +49,8 @@ var reverse = function(x) {
     }
 };
 
+// time complexity - O(n) - Linear
+// space complexity - ????
 console.log(reverse(123)); //returns 321
 console.log(reverse(-123)); // returns -321
 console.log(reverse(120)); // return 21
