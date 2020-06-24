@@ -21,7 +21,7 @@ E: nums can be an empty array
 */
 
 // Using HashMap DS to store the values
-var twoSum = function(nums, target) {
+var twoSum = (nums, target) => {
    var result = {};
    for(let [index, num] of nums.entries()) {
         if(result[num] !== undefined) return [result[num], index];
