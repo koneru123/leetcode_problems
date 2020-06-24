@@ -73,6 +73,7 @@ var maxProfit = function(prices) {
         } 
 };
 
+// time complexity - 3 for loops - O(2^n) - Exponential time
 const value = [7,1,5,3,6,4];
 const value1 = [7,6,4,3,1];
 console.log(maxProfit(value)); //5
