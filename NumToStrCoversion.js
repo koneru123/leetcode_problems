@@ -94,9 +94,9 @@ const convertNumToStr = (num) => {
     resultStr += `${thousandNum} thousand ${hundredNum} hundred ${tenNum} ${oneNum}`
 
     // returning the string
-    return resultStr;
+    return resultStr; //twelve thousand three hundred fourty five
 }
 
 const num = 12345;
-console.log(convertNumToStr(num));
+console.log(convertNumToStr(num)); //twelve thousand three hundred fourty five
 
