@@ -77,10 +77,10 @@ console.log(arrayOfArrayProducts(input1));
 
 /* Complexity analysis
 
-Time complexity : O(N)O(N) where NN represents the number of elements in the input array. 
-We use one iteration to construct the array LL, one to construct the array RR and one 
-last to construct the answeranswer array using LL and RR.
+Time complexity : O(N) where N represents the number of elements in the input array. 
+We use one iteration to construct the array L, one to construct the array R and one 
+last to construct the answeranswer array using L and R.
 
-Space complexity : O(N)O(N) used up by the two intermediate arrays that we constructed to 
+Space complexity : O(N) used up by the two intermediate arrays that we constructed to 
 keep track of product of elements to the left and right. 
 */
