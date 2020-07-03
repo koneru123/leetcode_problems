@@ -29,7 +29,7 @@ Constraints:
     O: Array
     C: Less time
     E:
-        - Array can be empty // return []
+        - Array can be empty, in this case it could just have 1 value // return []
         - Array can have -ve values
 */
 function arrayOfArrayProducts(arr) {
