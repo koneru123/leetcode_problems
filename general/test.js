@@ -68,37 +68,17 @@ n: number of domains in the input
                   // calculate the aggregate
 */
   
-const getAggregate = (str) => {
-   //console.log(str);
-   let aggregateV = 0;
+const getAggregatedData = (arr) => {
+   let aggregatedObj = {};
 
-   if(str.includes('.com')) {
-        let value = 0;
-        let strSpli = str.split(',');
-        //console.log("strSplit", strSpli);
-        value = parseInt(strSpli[0], 10); 
-        aggregateV += value;   
-      }  
-      return aggregateV;
-}
+   for(let i = 0; i < arr.length; i++) {
+      count = getCounts(arr[i]);
+      domain = getDomain(arr[i]);
 
-/*const splitStr = (str) {
-    let resultStr = "";
-    
-    let val = str.split('.');
-    return val;
-}*/
+      
+   }
 
-const resultObj = (arr) => {
-    let resultObj = {};
-    let val = 0;
-    for(let i = 0; i < arr.length; i++) {
-      val += getAggregate(arr[i]);
-    }
-     if(resultObj['.com'] === undefined) {
-        resultObj['com:'] = val; 
-     }
-    return resultObj;
+   return aggregatedObj;
 }
 
 
