@@ -26,7 +26,7 @@ var moveZeroes = function(nums) {
             }
         }
     }
-    return nums
+    return nums;
 };
 
 const nums = [0,1,0,3,12];
