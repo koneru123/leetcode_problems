@@ -41,24 +41,17 @@ n: number of pairs in the input
 */
 
 /*
-  DS: Graph
-  1 - 3 - 6
-  2 - 3
-  4 - 5
-  4 - 8
-  4 - 9 - 11
-  5 - 6
-  5 - 7
+  noParents - [1, 2, 4]
+  oneParent - [7, 11, 9, 8, 5]
+  - loop through the array
+  - parentElement is the first element in nested array
+  - childElement is the second element in nested array
+  - Create a helper function
+
 */
 
 const findNodesWithNoParents = (parentChildPairs) => {
-  let noParentsNodes = [];
   
-  for(let i = 0; i < parentChildPairs.length; i++) {
-     
-   console.log(parentChildPairs[i]);   
-  }
-  return noParentsNodes;
 }
 
 const parentChildPairs = [

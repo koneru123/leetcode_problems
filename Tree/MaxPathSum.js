@@ -38,7 +38,27 @@ Output: 42*/
  * @return {number}
  */
 var maxPathSum = function(root) {
-    let total = 0;
-    total += maxPathSum(root.left);
-    total += maxPathSum(root.right);
+    let total;
+    const BFS = (root) => {
+      total += root.value;
+      maxPathSum(root.left);
+      maxPathSum(root.right);
+    };
+    BFS(root);
+    return total;
 };
+
+class Node {
+  constructor(value, left = null, right = null) {
+      this.value = value;
+      this.left = left;
+      this.right = right;
+  }
+}
+
+const newTree = new Node();
+newTree.value = 1;
+newTree.left = 2;
+newTree.right = 3;
+console.log(maxPathSum(newTree));
+
